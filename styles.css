@@ -1022,6 +1022,34 @@ body {
         font-size: 1.1rem;
     }
     
+    /* Mejoras para el círculo de transformación en tablet */
+    .transformation-circle {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    
+    .progress-ring {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .progress-ring-circle {
+        r: 115;
+        cx: 125;
+        cy: 125;
+        stroke-dasharray: 722;
+        stroke-dashoffset: 180;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -1067,6 +1095,54 @@ body {
         font-size: 2rem;
     }
     
+    /* Optimización del círculo para móviles pequeños */
+    .transformation-circle {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    .progress-ring {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .progress-ring-circle {
+        r: 90;
+        cx: 100;
+        cy: 100;
+        stroke-dasharray: 565;
+        stroke-dashoffset: 141;
+        stroke-width: 3;
+    }
+    
+    .stats-display {
+        gap: 0.5rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .stat-divider {
+        height: 30px;
+    }
+    
+    /* Ajustar el hero para móviles */
+    .hero-container {
+        padding: 40px 15px 20px;
+        gap: 30px;
+    }
+    
+    .hero-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+    
     .benefit-card,
     .testimonial-card {
         padding: 24px 20px;
@@ -1082,6 +1158,48 @@ body {
     
     .cta-content h2 {
         font-size: 2rem;
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 320px) {
+    .transformation-circle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .progress-ring {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .progress-ring-circle {
+        r: 80;
+        cx: 90;
+        cy: 90;
+        stroke-dasharray: 502;
+        stroke-dashoffset: 125;
+        stroke-width: 2.5;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.65rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-container {
+        padding: 30px 10px 15px;
     }
 }
 
